@@ -69,10 +69,8 @@
 		};
 
 	};
-};
 
-/ {
-    combos {
+	combos {
         compatible = "zmk,combos";
 
 		// Lock keyboard on SUPER+ALT+FUNC+CTRL+Q
