@@ -21,10 +21,10 @@
 	combos {
         compatible = "zmk,combos";
 
-		// Lock keyboard on SUPER+ALT+FUNC+CTRL+Q
+		// Lock keyboard on LCTRL+RCTRL+Q
         combo_lock {
             timeout-ms = <50>;
-            key-positions = <15 53 60>;
+            key-positions = <0 1>;
             bindings = <&tog LOCK>;
         };
     };
@@ -34,11 +34,11 @@
 
 		default_layer {
 // ------------------------------------------------------------------------------------------
-// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
-// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
-// | MO(2) |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
-// |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
-// |  CTL  |  OPT  |  CMD  |             SPACE            |  CMD  |  OPT  |  MO(1)  |  CTL  |
+// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |   0 - 13
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |  14 - 27
+// | MO(2) |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |  28 - 40
+// |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |  41 - 52
+// |  CTL  |  OPT  |  CMD  |             SPACE            |  CMD  |  OPT  |  MO(1)  |  CTL  |  53 - 60
 // ------------------------------------------------------------------------------------------
 			bindings = <
 	&gresc          &kp N1    &kp N2    &kp N3  &kp N4  &kp N5     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS   &kp EQUAL     &kp BSPC
