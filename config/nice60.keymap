@@ -18,6 +18,17 @@
 #define LOCK 3
 
 / {
+	combos {
+        compatible = "zmk,combos";
+
+		// Lock keyboard on SUPER+ALT+FUNC+CTRL+Q
+        combo_lock {
+            timeout-ms = <50>;
+            key-positions = <15 57 58 59 60>;
+            bindings = <&tog LOCK>;
+        };
+    };
+
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -69,15 +80,4 @@
 		};
 
 	};
-
-	combos {
-        compatible = "zmk,combos";
-
-		// Lock keyboard on SUPER+ALT+FUNC+CTRL+Q
-        combo_lock {
-            timeout-ms = <50>;
-            key-positions = <15 57 58 59 60>;
-            bindings = <&tog LOCK>;
-        };
-    };
 };
