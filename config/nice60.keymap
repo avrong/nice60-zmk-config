@@ -70,3 +70,16 @@
 
 	};
 };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+		// Lock keyboard on SUPER+ALT+FUNC+CTRL+Q
+        combo_lock {
+            timeout-ms = <50>;
+            key-positions = <16 58 59 60 61>;
+            bindings = <&kp ESC>;
+        };
+    };
+};
