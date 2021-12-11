@@ -21,10 +21,10 @@
 	combos {
         compatible = "zmk,combos";
 
-		// Lock keyboard on LCTRL+RCTRL+Q
+		// Lock keyboard on FUNC+RCTRL+Q
         combo_lock {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <59 60 15>;
             bindings = <&tog LOCK>;
         };
     };
